@@ -1,0 +1,3108 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LMa – Premium non-surgical cosmetic procedures. Luxury aesthetic clinic offering cutting-edge treatments by a certified cosmetic specialist."
+    />
+    <meta
+      name="keywords"
+      content="non-surgical cosmetic, lip filler, botox, aesthetic clinic, LMa, luxury cosmetic, تجميل, حقن, فيلر, بوتوكس"
+    />
+    <title>LMa | Luxury Aesthetic Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&family=Tajawal:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --gold: #c9a96e;
+        --gold-light: #e8d5b0;
+        --gold-dark: #9e7b40;
+        --cream: #faf8f4;
+        --beige: #f0ebe1;
+        --beige-mid: #e4dace;
+        --dark: #1a1714;
+        --dark-mid: #2e2a25;
+        --warm-gray: #8a8178;
+        --white: #ffffff;
+        --font-body: 'Jost', sans-serif;
+        --font-display: 'Cormorant Garamond', serif;
+      }
+
+      /* ── Arabic font overrides ── */
+      html[lang='ar'] {
+        --font-body: 'Tajawal', sans-serif;
+        --font-display: 'Tajawal', sans-serif;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+
+      body {
+        font-family: var(--font-body);
+        background: var(--cream);
+        color: var(--dark);
+        overflow-x: hidden;
+        cursor: none;
+      }
+
+      html[lang='ar'] body {
+        font-size: 17px;
+      }
+
+      /* ── Arabic: remove letter-spacing & uppercase from ALL text elements ── */
+      html[lang='ar'] .nav-links a,
+      html[lang='ar'] .nav-cta,
+      html[lang='ar'] .btn-primary,
+      html[lang='ar'] .btn-ghost,
+      html[lang='ar'] .hero-eyebrow,
+      html[lang='ar'] .hero-subtitle,
+      html[lang='ar'] .hero-badge-label,
+      html[lang='ar'] .section-eyebrow,
+      html[lang='ar'] .about-title-text,
+      html[lang='ar'] .cert-body,
+      html[lang='ar'] .service-link,
+      html[lang='ar'] .ba-label,
+      html[lang='ar'] .ba-proc-sub,
+      html[lang='ar'] .ba-card-label-main,
+      html[lang='ar'] .pillar-title,
+      html[lang='ar'] .contact-detail-label,
+      html[lang='ar'] .form-label,
+      html[lang='ar'] .form-submit,
+      html[lang='ar'] .footer-col-title,
+      html[lang='ar'] .footer-tagline,
+      html[lang='ar'] .testimonial-author,
+      html[lang='ar'] .rating-count,
+      html[lang='ar'] .clinic-photo-label,
+      html[lang='ar'] .footer-copy,
+      html[lang='ar'] .hero-scroll span {
+        letter-spacing: 0 !important;
+        text-transform: none !important;
+      }
+
+      /* ── Arabic typography weights & styles ── */
+      html[lang='ar'] .hero-title,
+      html[lang='ar'] .section-title {
+        font-weight: 700;
+      }
+      html[lang='ar'] .hero-title em,
+      html[lang='ar'] .section-title em {
+        font-style: normal;
+      }
+      html[lang='ar'] .about-name {
+        font-style: normal;
+        font-weight: 700;
+      }
+      html[lang='ar'] .testimonial-text {
+        font-style: normal;
+      }
+      html[lang='ar'] .footer-logo {
+        font-style: normal;
+      }
+      html[lang='ar'] .cert-name {
+        font-size: 1.2rem;
+      }
+      html[lang='ar'] .service-name {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+      html[lang='ar'] .ba-proc-name {
+        font-size: 1.1rem;
+      }
+
+      /* ── Arabic: flip decorative lines ── */
+      html[lang='ar'] .hero-eyebrow::before,
+      html[lang='ar'] .section-eyebrow::before {
+        display: none;
+      }
+      html[lang='ar'] .hero-eyebrow::after,
+      html[lang='ar'] .section-eyebrow::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 1px;
+        background: var(--gold);
+      }
+      html[lang='ar'] .hero-eyebrow::after {
+        width: 40px;
+      }
+
+      /* ── Arabic: flip border on pillar & testimonial card ── */
+      html[lang='ar'] .pillar {
+        border-left: none;
+        border-right: 2px solid var(--gold-light);
+        padding-left: 0;
+        padding-right: 16px;
+      }
+      html[lang='ar'] .testimonial-card {
+        border-left: none;
+        border-right: 2px solid var(--gold-light);
+      }
+      html[lang='ar'] .about-content {
+        padding-left: 0;
+        padding-right: 20px;
+      }
+
+      /* ── Arabic: RTL layout fixes ── */
+      html[lang='ar'] .hero-lines {
+        right: auto;
+        left: 0;
+      }
+      html[lang='ar'] .hero-photo-bg {
+        right: auto;
+        left: -20px;
+      }
+      html[lang='ar'] .hero-badge {
+        left: auto;
+        right: -50px;
+      }
+      html[lang='ar'] .hero-logo-stamp {
+        right: auto;
+        left: -30px;
+      }
+      html[lang='ar'] .about-accent-box {
+        left: auto;
+        right: -24px;
+      }
+      html[lang='ar'] .about-stat-box {
+        right: auto;
+        left: -40px;
+      }
+      html[lang='ar'] .ba-label {
+        left: auto;
+        right: 16px;
+      }
+      html[lang='ar'] .float-wa {
+        right: auto;
+        left: 36px;
+      }
+      html[lang='ar'] .nav-links a::after {
+        left: auto;
+        right: 0;
+      }
+      html[lang='ar'] .cert-card::before {
+        transform-origin: right;
+      }
+      html[lang='ar'] .service-card::after {
+        transform-origin: right;
+      }
+      html[lang='ar'] .btn-ghost .arrow {
+        transform: scaleX(-1);
+      }
+
+      /* ── Arabic hero content padding ── */
+      html[lang='ar'] .hero-content {
+        padding: 120px 80px 80px 60px;
+      }
+
+      /* ── Language Toggle Button ── */
+      .lang-toggle {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        border: 1px solid rgba(201, 169, 110, 0.4);
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+      .lang-btn {
+        font-size: 0.72rem;
+        font-weight: 400;
+        color: var(--dark-mid);
+        background: transparent;
+        border: none;
+        cursor: none;
+        padding: 8px 14px;
+        transition:
+          color 0.25s,
+          background 0.25s;
+        font-family: 'Jost', sans-serif;
+        white-space: nowrap;
+      }
+      .lang-btn.active {
+        background: var(--gold);
+        color: var(--white);
+      }
+      .lang-btn:not(.active):hover {
+        color: var(--gold);
+      }
+      .lang-divider {
+        width: 1px;
+        height: 100%;
+        background: rgba(201, 169, 110, 0.4);
+        flex-shrink: 0;
+        align-self: stretch;
+      }
+
+      /* ── Lang transition overlay ── */
+      .lang-overlay {
+        position: fixed;
+        inset: 0;
+        background: var(--cream);
+        z-index: 9997;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.22s ease;
+      }
+      .lang-overlay.active {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      /* ── Custom Cursor ── */
+      .cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        pointer-events: none;
+      }
+      .cursor-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--gold);
+        transform: translate(-50%, -50%);
+      }
+      .cursor-ring {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid var(--gold);
+        transform: translate(-50%, -50%);
+        transition:
+          width 0.2s,
+          height 0.2s,
+          opacity 0.2s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+      }
+      body:hover .cursor-ring {
+        opacity: 1;
+      }
+
+      /* ── Scrollbar ── */
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--cream);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--gold);
+        border-radius: 2px;
+      }
+
+      /* ── Navigation ── */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 60px;
+        transition:
+          background 0.4s,
+          padding 0.4s,
+          backdrop-filter 0.4s;
+      }
+      nav.scrolled {
+        background: rgba(250, 248, 244, 0.88);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 14px 60px;
+        border-bottom: 1px solid rgba(201, 169, 110, 0.2);
+      }
+      .nav-logo {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2rem;
+        font-weight: 400;
+        font-style: italic;
+        color: var(--gold);
+        letter-spacing: 0.02em;
+        text-decoration: none;
+      }
+      .nav-links {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+      }
+      .nav-links a {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.78rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--dark-mid);
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 2px;
+        transition: color 0.3s;
+      }
+      .nav-links a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: var(--gold);
+        transition: width 0.35s ease;
+      }
+      .nav-links a:hover {
+        color: var(--gold);
+      }
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .nav-cta {
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: 0.75rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--gold);
+        border: 1px solid var(--gold);
+        padding: 10px 28px;
+        text-decoration: none;
+        transition:
+          background 0.3s,
+          color 0.3s;
+      }
+      .nav-cta:hover {
+        background: var(--gold);
+        color: var(--white);
+      }
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: none;
+        background: none;
+        border: none;
+      }
+      .hamburger span {
+        display: block;
+        width: 24px;
+        height: 1px;
+        background: var(--dark);
+        transition: 0.3s;
+      }
+
+      /* ── Hero ── */
+      #hero {
+        min-height: 100vh;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        overflow: hidden;
+        background: var(--cream);
+      }
+      .hero-bg-texture {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background-image:
+          radial-gradient(
+            ellipse at 70% 50%,
+            rgba(201, 169, 110, 0.08) 0%,
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse at 20% 80%,
+            rgba(201, 169, 110, 0.05) 0%,
+            transparent 40%
+          );
+      }
+      .hero-lines {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 55%;
+        pointer-events: none;
+        overflow: hidden;
+      }
+      .hero-lines::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          var(--beige) 0%,
+          var(--beige-mid) 100%
+        );
+      }
+      .hero-circle-deco {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 480px;
+        height: 480px;
+        border-radius: 50%;
+        border: 1px solid rgba(201, 169, 110, 0.3);
+        pointer-events: none;
+        animation: rotateSlow 30s linear infinite;
+      }
+      .hero-circle-deco::before {
+        content: '';
+        position: absolute;
+        inset: 20px;
+        border-radius: 50%;
+        border: 1px dashed rgba(201, 169, 110, 0.2);
+      }
+      @keyframes rotateSlow {
+        to {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+
+      .hero-content {
+        padding: 120px 60px 80px 80px;
+        position: relative;
+        z-index: 2;
+      }
+      .hero-eyebrow {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.72rem;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .hero-eyebrow::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 1px;
+        background: var(--gold);
+      }
+      .hero-title {
+        font-family: var(--font-display);
+        font-weight: 300;
+        font-size: clamp(3.2rem, 5vw, 5.5rem);
+        line-height: 1.15;
+        color: var(--dark);
+        margin-bottom: 12px;
+      }
+      .hero-title em {
+        font-style: italic;
+        color: var(--gold);
+      }
+      .hero-subtitle {
+        font-family: var(--font-body);
+        font-weight: 200;
+        font-size: 0.9rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--warm-gray);
+        margin-bottom: 32px;
+      }
+      .hero-desc {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.85;
+        color: var(--warm-gray);
+        max-width: 420px;
+        margin-bottom: 48px;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .btn-primary {
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        background: var(--gold);
+        color: var(--white);
+        padding: 16px 40px;
+        text-decoration: none;
+        transition:
+          background 0.3s,
+          transform 0.3s;
+        display: inline-block;
+      }
+      .btn-primary:hover {
+        background: var(--gold-dark);
+        transform: translateY(-2px);
+      }
+      .btn-ghost {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--dark-mid);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        transition: color 0.3s;
+      }
+      .btn-ghost:hover {
+        color: var(--gold);
+      }
+      .btn-ghost .arrow {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid currentColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border-color 0.3s;
+        flex-shrink: 0;
+      }
+      .hero-image-wrap {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 40px;
+        height: 100vh;
+      }
+      .hero-photo-frame {
+        position: relative;
+        width: 380px;
+        height: 480px;
+      }
+      .hero-photo-bg {
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          var(--gold-light),
+          var(--beige-mid)
+        );
+        border-radius: 2px;
+      }
+      .hero-photo {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 2px;
+        filter: grayscale(10%) contrast(1.02);
+      }
+      .hero-badge {
+        position: absolute;
+        bottom: 40px;
+        left: -50px;
+        z-index: 3;
+        background: rgba(250, 248, 244, 0.92);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(201, 169, 110, 0.3);
+        padding: 20px 24px;
+        min-width: 160px;
+      }
+      .hero-badge-num {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2.4rem;
+        font-weight: 300;
+        color: var(--gold);
+        line-height: 1;
+        display: block;
+      }
+      .hero-badge-label {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.65rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--warm-gray);
+        display: block;
+        margin-top: 4px;
+      }
+      .hero-logo-stamp {
+        position: absolute;
+        top: -30px;
+        right: -30px;
+        z-index: 3;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: rgba(250, 248, 244, 0.9);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(201, 169, 110, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-logo-stamp span {
+        font-family: 'Cormorant Garamond', serif;
+        font-style: italic;
+        font-size: 1.3rem;
+        color: var(--gold);
+      }
+      .hero-scroll {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        z-index: 10;
+      }
+      .hero-scroll span {
+        font-family: var(--font-body);
+        font-size: 0.6rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--warm-gray);
+      }
+      .scroll-line {
+        width: 1px;
+        height: 50px;
+        background: var(--gold);
+        animation: scrollPulse 2s ease-in-out infinite;
+      }
+      @keyframes scrollPulse {
+        0%,
+        100% {
+          opacity: 0.3;
+          transform: scaleY(0.6);
+        }
+        50% {
+          opacity: 1;
+          transform: scaleY(1);
+        }
+      }
+
+      /* ── Section Shared ── */
+      section {
+        padding: 120px 80px;
+        position: relative;
+      }
+      .section-eyebrow {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.72rem;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .section-eyebrow::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 1px;
+        background: var(--gold);
+      }
+      .section-title {
+        font-family: var(--font-display);
+        font-weight: 300;
+        font-size: clamp(2.4rem, 3.5vw, 3.8rem);
+        line-height: 1.2;
+        color: var(--dark);
+        margin-bottom: 24px;
+      }
+      .section-title em {
+        font-style: italic;
+        color: var(--gold);
+      }
+      .section-desc {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.97rem;
+        line-height: 1.9;
+        color: var(--warm-gray);
+        max-width: 560px;
+      }
+      .gold-line {
+        width: 60px;
+        height: 1px;
+        background: var(--gold);
+        margin-bottom: 32px;
+      }
+
+      /* ── Reveal Animations ── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition:
+          opacity 0.8s ease,
+          transform 0.8s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .reveal-left {
+        opacity: 0;
+        transform: translateX(-40px);
+        transition:
+          opacity 0.8s ease,
+          transform 0.8s ease;
+      }
+      .reveal-left.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .reveal-right {
+        opacity: 0;
+        transform: translateX(40px);
+        transition:
+          opacity 0.8s ease,
+          transform 0.8s ease;
+      }
+      .reveal-right.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      /* ── About ── */
+      #about {
+        background: var(--white);
+      }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        align-items: center;
+      }
+      .about-image-wrap {
+        position: relative;
+      }
+      .about-photo {
+        width: 100%;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+      }
+      .about-accent-box {
+        position: absolute;
+        top: -24px;
+        left: -24px;
+        width: 200px;
+        height: 200px;
+        border: 1px solid rgba(201, 169, 110, 0.35);
+        pointer-events: none;
+      }
+      .about-stat-box {
+        position: absolute;
+        bottom: 40px;
+        right: -40px;
+        background: var(--dark);
+        padding: 32px 28px;
+        min-width: 170px;
+      }
+      .about-stat-num {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 3rem;
+        font-weight: 300;
+        color: var(--gold);
+        display: block;
+        line-height: 1;
+      }
+      .about-stat-label {
+        font-family: var(--font-body);
+        font-weight: 200;
+        font-size: 0.68rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.6);
+        display: block;
+        margin-top: 8px;
+      }
+      .about-content {
+        padding-left: 20px;
+      }
+      .about-name {
+        font-family: var(--font-display);
+        font-style: italic;
+        font-size: 1.4rem;
+        color: var(--gold);
+        margin-bottom: 8px;
+      }
+      .about-title-text {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--warm-gray);
+        margin-bottom: 32px;
+      }
+      .about-pillars {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 40px;
+      }
+      .pillar {
+        border-left: 2px solid var(--gold-light);
+        padding-left: 16px;
+      }
+      .pillar-title {
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--dark);
+        margin-bottom: 6px;
+      }
+      .pillar-desc {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.85rem;
+        color: var(--warm-gray);
+        line-height: 1.6;
+      }
+
+      /* ── Certifications ── */
+      #certifications {
+        background: var(--dark);
+        overflow: hidden;
+      }
+      #certifications .section-eyebrow {
+        color: var(--gold);
+      }
+      #certifications .section-title {
+        color: var(--white);
+      }
+      #certifications .section-desc {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .cert-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+        margin-top: 60px;
+      }
+      .cert-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(201, 169, 110, 0.12);
+        padding: 40px 32px;
+        transition:
+          background 0.4s,
+          border-color 0.4s;
+        position: relative;
+        overflow: hidden;
+      }
+      .cert-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: var(--gold);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+        transform-origin: left;
+      }
+      .cert-card:hover {
+        background: rgba(201, 169, 110, 0.06);
+        border-color: rgba(201, 169, 110, 0.3);
+      }
+      .cert-card:hover::before {
+        transform: scaleX(1);
+      }
+      .cert-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(201, 169, 110, 0.3);
+        border-radius: 50%;
+        font-size: 1.2rem;
+        color: var(--gold);
+      }
+      .cert-name {
+        font-family: var(--font-display);
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: var(--white);
+        margin-bottom: 8px;
+      }
+      .cert-body {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.78rem;
+        letter-spacing: 0.1em;
+        color: var(--gold);
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+      .cert-desc {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.85rem;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.45);
+      }
+
+      /* ── Services ── */
+      #services {
+        background: var(--cream);
+      }
+      .services-intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: end;
+        margin-bottom: 80px;
+      }
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+      }
+      .service-card {
+        background: var(--white);
+        padding: 48px 36px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid transparent;
+        transition:
+          border-color 0.4s,
+          transform 0.4s,
+          box-shadow 0.4s;
+        cursor: none;
+      }
+      .service-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: var(--gold);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+        transform-origin: left;
+      }
+      .service-card:hover {
+        border-color: rgba(201, 169, 110, 0.2);
+        transform: translateY(-6px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+      }
+      .service-card:hover::after {
+        transform: scaleX(1);
+      }
+      .service-num {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 4rem;
+        font-weight: 300;
+        color: rgba(201, 169, 110, 0.4);
+        line-height: 1;
+        margin-bottom: 20px;
+        display: block;
+      }
+      .service-name {
+        font-family: var(--font-display);
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--dark);
+        margin-bottom: 12px;
+      }
+      .service-desc {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 1.75;
+        color: var(--warm-gray);
+        margin-bottom: 24px;
+      }
+      .service-link {
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: 0.7rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: gap 0.3s;
+      }
+      .service-link:hover {
+        gap: 14px;
+      }
+
+      /* ── Before & After ── */
+      #gallery {
+        background: var(--beige);
+      }
+      .gallery-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 60px;
+      }
+      .ba-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .ba-card {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 3/4;
+        background: var(--beige-mid);
+      }
+      .ba-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .ba-placeholder {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          160deg,
+          var(--beige-mid) 0%,
+          var(--beige) 100%
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+      .ba-label {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.65rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--gold);
+        background: rgba(250, 248, 244, 0.85);
+        backdrop-filter: blur(8px);
+        padding: 6px 14px;
+      }
+      .ba-procedure {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(26, 23, 20, 0.85));
+        padding: 40px 24px 24px;
+        transform: translateY(100%);
+        transition: transform 0.4s ease;
+      }
+      .ba-card:hover .ba-procedure {
+        transform: translateY(0);
+      }
+      .ba-proc-name {
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+        color: var(--white);
+        margin-bottom: 4px;
+      }
+      .ba-proc-sub {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.72rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+      .ba-icon {
+        font-size: 3rem;
+        opacity: 0.2;
+        color: var(--gold-dark);
+      }
+      .ba-card-label-main {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.8rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--warm-gray);
+      }
+
+      /* ── Testimonials ── */
+      #testimonials {
+        background: var(--white);
+      }
+      .testimonials-wrap {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 80px;
+        align-items: start;
+      }
+      .testimonials-list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 20px;
+      }
+      .testimonial-card {
+        padding: 36px 32px;
+        background: var(--cream);
+        border-left: 2px solid var(--gold-light);
+        position: relative;
+        transition:
+          border-color 0.3s,
+          background 0.3s;
+      }
+      .testimonial-card:hover {
+        border-color: var(--gold);
+        background: var(--beige);
+      }
+      .testimonial-quote {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 3rem;
+        color: var(--gold);
+        line-height: 0.5;
+        margin-bottom: 16px;
+        display: block;
+      }
+      .testimonial-text {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.92rem;
+        line-height: 1.8;
+        color: var(--dark-mid);
+        font-style: italic;
+        margin-bottom: 20px;
+      }
+      .testimonial-stars {
+        color: var(--gold);
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+        display: block;
+      }
+      .testimonial-author {
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: 0.78rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--dark);
+      }
+      .testimonial-procedure {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.72rem;
+        color: var(--gold);
+        margin-top: 2px;
+        display: block;
+      }
+      .rating-summary {
+        text-align: center;
+        padding: 48px;
+        border: 1px solid rgba(201, 169, 110, 0.25);
+        background: var(--cream);
+        margin-bottom: 32px;
+      }
+      .rating-big {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 6rem;
+        font-weight: 300;
+        color: var(--dark);
+        line-height: 1;
+        display: block;
+      }
+      .rating-big em {
+        font-style: italic;
+        color: var(--gold);
+      }
+      .rating-stars-big {
+        font-size: 1.2rem;
+        color: var(--gold);
+        letter-spacing: 6px;
+        display: block;
+        margin: 8px 0;
+      }
+      .rating-count {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.78rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--warm-gray);
+      }
+
+      /* ── Contact ── */
+      #contact {
+        background: var(--cream);
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        align-items: start;
+      }
+      .contact-detail {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        margin-bottom: 36px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid rgba(201, 169, 110, 0.2);
+      }
+      .contact-detail:last-child {
+        border-bottom: none;
+      }
+      .contact-detail-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid rgba(201, 169, 110, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: var(--gold);
+        font-size: 1rem;
+      }
+      .contact-detail-label {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.68rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 4px;
+        display: block;
+      }
+      .contact-detail-value {
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: 0.95rem;
+        color: var(--dark);
+      }
+      .number-ltr {
+        direction: ltr;
+        unicode-bidi: isolate;
+      }
+
+      /* ── Footer ── */
+      footer {
+        background: var(--dark-mid);
+        padding: 80px 80px 40px;
+      }
+      .footer-top {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 60px;
+        padding-bottom: 60px;
+        border-bottom: 1px solid rgba(201, 169, 110, 0.15);
+        margin-bottom: 40px;
+      }
+      .footer-logo {
+        font-family: 'Cormorant Garamond', serif;
+        font-style: italic;
+        font-size: 2.4rem;
+        color: var(--gold);
+        display: block;
+        margin-bottom: 16px;
+      }
+      .footer-tagline {
+        font-family: var(--font-body);
+        font-weight: 200;
+        font-size: 0.8rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 24px;
+      }
+      .footer-bio {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.88rem;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.4);
+        max-width: 300px;
+      }
+      .footer-col-title {
+        font-family: var(--font-body);
+        font-weight: 400;
+        font-size: 0.7rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 24px;
+      }
+      .footer-links {
+        list-style: none;
+      }
+      .footer-links li {
+        margin-bottom: 12px;
+      }
+      .footer-links a {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.88rem;
+        color: rgba(255, 255, 255, 0.45);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .footer-links a:hover {
+        color: var(--gold);
+      }
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .footer-copy {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.78rem;
+        color: rgba(255, 255, 255, 0.25);
+      }
+      .footer-socials {
+        display: flex;
+        gap: 16px;
+      }
+      .footer-social {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid rgba(201, 169, 110, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 0.85rem;
+        text-decoration: none;
+        transition:
+          border-color 0.3s,
+          color 0.3s,
+          background 0.3s;
+      }
+      .footer-social:hover {
+        border-color: var(--gold);
+        color: var(--gold);
+        background: rgba(201, 169, 110, 0.08);
+      }
+
+      /* ── Floating WhatsApp ── */
+      .float-wa {
+        position: fixed;
+        bottom: 36px;
+        right: 36px;
+        z-index: 900;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: var(--gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        box-shadow: 0 8px 30px rgba(201, 169, 110, 0.5);
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+        animation: floatBob 3s ease-in-out infinite;
+      }
+      .float-wa:hover {
+        transform: scale(1.1);
+        box-shadow: 0 12px 40px rgba(201, 169, 110, 0.7);
+      }
+      @keyframes floatBob {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-6px);
+        }
+      }
+      .float-wa svg {
+        width: 26px;
+        height: 26px;
+        fill: white;
+      }
+
+      /* ── Ticker ── */
+      .ticker-wrap {
+        overflow: hidden;
+        background: var(--gold);
+        padding: 14px 0;
+      }
+      .ticker {
+        display: flex;
+        gap: 60px;
+        white-space: nowrap;
+        animation: tickerAnim 30s linear infinite;
+      }
+      html[dir='rtl'] .ticker {
+        animation: tickerRtl 30s linear infinite;
+      }
+      .ticker-item {
+        font-family: var(--font-body);
+        font-weight: 300;
+        font-size: 0.7rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-shrink: 0;
+      }
+      html[dir='rtl'] .ticker-item {
+        letter-spacing: 0;
+      }
+      .ticker-item .dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+      }
+      @keyframes tickerAnim {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      @keyframes tickerRtl {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(50%);
+        }
+      }
+
+      /* ── Mobile ── */
+      @media (max-width: 1024px) {
+        nav {
+          padding: 18px 30px;
+        }
+        nav.scrolled {
+          padding: 14px 30px;
+        }
+        .nav-links {
+          display: none;
+        }
+        .hamburger {
+          display: flex;
+        }
+        section {
+          padding: 80px 30px;
+        }
+        #hero {
+          grid-template-columns: 1fr;
+          min-height: auto;
+        }
+        .hero-image-wrap {
+          height: 60vw;
+          padding: 40px;
+        }
+        .hero-photo-frame {
+          width: 260px;
+          height: 340px;
+        }
+        .hero-content {
+          padding: 140px 30px 60px;
+        }
+        html[lang='ar'] .hero-content {
+          padding: 140px 30px 60px;
+        }
+        .hero-badge {
+          left: 10px;
+          bottom: 20px;
+        }
+        html[lang='ar'] .hero-badge {
+          left: auto;
+          right: 10px;
+        }
+        .hero-lines {
+          width: 100%;
+          top: auto;
+          bottom: 0;
+          height: 60vw;
+        }
+        .about-grid {
+          grid-template-columns: 1fr;
+          gap: 50px;
+        }
+        .about-stat-box {
+          right: 0;
+        }
+        html[lang='ar'] .about-stat-box {
+          right: auto;
+          left: 0;
+        }
+        .cert-grid {
+          grid-template-columns: 1fr;
+        }
+        .services-intro {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+        .ba-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .testimonials-wrap {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .contact-grid {
+          grid-template-columns: 1fr;
+          gap: 50px;
+        }
+        .footer-top {
+          grid-template-columns: 1fr 1fr;
+          gap: 40px;
+        }
+        footer {
+          padding: 60px 30px 30px;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          gap: 20px;
+          text-align: center;
+        }
+        .about-content {
+          padding-left: 0;
+        }
+        html[lang='ar'] .about-content {
+          padding-right: 0;
+        }
+        .about-accent-box {
+          display: none;
+        }
+        .nav-right {
+          gap: 10px;
+        }
+      }
+      @media (max-width: 600px) {
+        .ba-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-top {
+          grid-template-columns: 1fr;
+        }
+        .hero-photo-frame {
+          width: 220px;
+          height: 280px;
+        }
+        .hero-image-wrap {
+          height: auto;
+        }
+        .lang-btn {
+          padding: 7px 10px;
+          font-size: 0.68rem;
+        }
+        .nav-cta {
+          display: none;
+        }
+      }
+
+      /* ── Mobile nav ── */
+      .mobile-menu {
+        position: fixed;
+        inset: 0;
+        background: var(--cream);
+        z-index: 990;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s;
+      }
+      .mobile-menu.open {
+        opacity: 1;
+        pointer-events: all;
+      }
+      .mobile-menu a {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: var(--dark);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      html[lang='ar'] .mobile-menu a {
+        font-family: 'Tajawal', sans-serif;
+        font-size: 1.9rem;
+      }
+      .mobile-menu a:hover {
+        color: var(--gold);
+      }
+      .hamburger.open span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+      .hamburger.open span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.open span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Lang overlay -->
+    <div class="lang-overlay" id="langOverlay"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor">
+      <div class="cursor-dot" id="dot"></div>
+      <div class="cursor-ring" id="ring"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">LMa</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-en="About" data-ar="عن الطبيبة">About</a></li>
+        <li>
+          <a href="#certifications" data-en="Credentials" data-ar="المؤهلات"
+            >Credentials</a
+          >
+        </li>
+        <li>
+          <a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
+        </li>
+        <li>
+          <a href="#gallery" data-en="Results" data-ar="النتائج">Results</a>
+        </li>
+        <li>
+          <a href="#testimonials" data-en="Reviews" data-ar="التقييمات"
+            >Reviews</a
+          >
+        </li>
+        <li>
+          <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button class="lang-btn active" id="btnEn" onclick="setLang('en')">
+            EN
+          </button>
+          <span class="lang-divider"></span>
+          <button class="lang-btn" id="btnAr" onclick="setLang('ar')">ع</button>
+        </div>
+        <a
+          href="#contact"
+          class="nav-cta"
+          data-en="Book Consultation"
+          data-ar="احجزي استشارة"
+          >Book Consultation</a
+        >
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a
+        href="#about"
+        onclick="closeMobile()"
+        data-en="About"
+        data-ar="عن الطبيبة"
+        >About</a
+      >
+      <a
+        href="#certifications"
+        onclick="closeMobile()"
+        data-en="Credentials"
+        data-ar="المؤهلات"
+        >Credentials</a
+      >
+      <a
+        href="#services"
+        onclick="closeMobile()"
+        data-en="Services"
+        data-ar="الخدمات"
+        >Services</a
+      >
+      <a
+        href="#gallery"
+        onclick="closeMobile()"
+        data-en="Results"
+        data-ar="النتائج"
+        >Results</a
+      >
+      <a
+        href="#testimonials"
+        onclick="closeMobile()"
+        data-en="Reviews"
+        data-ar="التقييمات"
+        >Reviews</a
+      >
+      <a
+        href="#contact"
+        onclick="closeMobile()"
+        data-en="Contact"
+        data-ar="تواصل معنا"
+        >Contact</a
+      >
+    </div>
+
+    <!-- Ticker -->
+    <div
+      class="ticker-wrap"
+      style="margin-top: 0; position: relative; z-index: 1"
+    >
+      <div class="ticker" id="tickerTrack">
+        <span class="ticker-item" data-en="Lip Filler" data-ar="حقن الشفاه"
+          >Lip Filler <span class="dot"></span
+        ></span>
+        <span
+          class="ticker-item"
+          data-en="Botox & Dysport"
+          data-ar="بوتوكس وديسبورت"
+          >Botox & Dysport <span class="dot"></span
+        ></span>
+        <span
+          class="ticker-item"
+          data-en="Skin Boosters"
+          data-ar="محفزات البشرة"
+          >Skin Boosters <span class="dot"></span
+        ></span>
+        <span class="ticker-item" data-en="PRP Therapy" data-ar="علاج البلازما"
+          >PRP Therapy <span class="dot"></span
+        ></span>
+        <span class="ticker-item" data-en="Thread Lifts" data-ar="رفع الخيوط"
+          >Thread Lifts <span class="dot"></span
+        ></span>
+        <span
+          class="ticker-item"
+          data-en="Jawline Contouring"
+          data-ar="تحديد الفك"
+          >Jawline Contouring <span class="dot"></span
+        ></span>
+        <span
+          class="ticker-item"
+          data-en="Under-Eye Fillers"
+          data-ar="فيلر تحت العين"
+          >Under-Eye Fillers <span class="dot"></span
+        ></span>
+        <span
+          class="ticker-item"
+          data-en="Cheek Enhancement"
+          data-ar="تعزيز الخدود"
+          >Cheek Enhancement <span class="dot"></span
+        ></span>
+        <span class="ticker-item" data-en="Lip Filler" data-ar="حقن الشفاه"
+          >Lip Filler <span class="dot"></span
+        ></span>
+        <span
+          class="ticker-item"
+          data-en="Botox & Dysport"
+          data-ar="بوتوكس وديسبورت"
+          >Botox & Dysport <span class="dot"></span
+        ></span>
+        <span
+          class="ticker-item"
+          data-en="Skin Boosters"
+          data-ar="محفزات البشرة"
+          >Skin Boosters <span class="dot"></span
+        ></span>
+        <span class="ticker-item" data-en="PRP Therapy" data-ar="علاج البلازما"
+          >PRP Therapy <span class="dot"></span
+        ></span>
+        <span class="ticker-item" data-en="Thread Lifts" data-ar="رفع الخيوط"
+          >Thread Lifts <span class="dot"></span
+        ></span>
+        <span
+          class="ticker-item"
+          data-en="Jawline Contouring"
+          data-ar="تحديد الفك"
+          >Jawline Contouring <span class="dot"></span
+        ></span>
+        <span
+          class="ticker-item"
+          data-en="Under-Eye Fillers"
+          data-ar="فيلر تحت العين"
+          >Under-Eye Fillers <span class="dot"></span
+        ></span>
+        <span
+          class="ticker-item"
+          data-en="Cheek Enhancement"
+          data-ar="تعزيز الخدود"
+          >Cheek Enhancement <span class="dot"></span
+        ></span>
+      </div>
+    </div>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section id="hero">
+      <div class="hero-bg-texture"></div>
+      <div class="hero-content reveal-left">
+        <p
+          class="hero-eyebrow"
+          data-en="Luxury Aesthetic Medicine"
+          data-ar="طب تجميلي فاخر"
+        >
+          Luxury Aesthetic Medicine
+        </p>
+        <h1 class="hero-title">
+          <span data-en="The Art of" data-ar="فن الجمال">The Art of</span><br />
+          <em data-en="Natural Beauty" data-ar="الطبيعي الأصيل"
+            >Natural Beauty</em
+          ><br />
+          <span data-en="Refined." data-ar="بدقة واحترافية.">Refined.</span>
+        </h1>
+        <p
+          class="hero-subtitle"
+          data-en="Non-Surgical Cosmetic Procedures"
+          data-ar="إجراءات تجميلية غير جراحية"
+        >
+          Non-Surgical Cosmetic Procedures
+        </p>
+        <p
+          class="hero-desc"
+          data-en="Experience transformative aesthetic treatments delivered with medical precision and an artistic eye. Every procedure is tailored to enhance your natural beauty, never replace it."
+          data-ar="اختبري علاجات تجميلية تحويلية تُقدَّم بدقة طبية عالية وعين فنية رفيعة. كل إجراء مُصمَّم خصيصاً لإبراز جمالك الطبيعي، لا الاستعاضة عنه."
+        >
+          Experience transformative aesthetic treatments delivered with medical
+          precision and an artistic eye. Every procedure is tailored to enhance
+          your natural beauty, never replace it.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="#contact"
+            class="btn-primary"
+            data-en="Book Consultation"
+            data-ar="احجزي استشارتك"
+            >Book Consultation</a
+          >
+          <a href="#services" class="btn-ghost">
+            <span class="arrow">→</span>
+            <span data-en="Explore Services" data-ar="استعرضي الخدمات"
+              >Explore Services</span
+            >
+          </a>
+        </div>
+      </div>
+      <div class="hero-lines"><div class="hero-circle-deco"></div></div>
+      <div class="hero-image-wrap reveal-right">
+        <div class="hero-photo-frame">
+          <div class="hero-photo-bg"></div>
+          <img
+            class="hero-photo"
+            src="./images/main/1.png"
+            alt="Dr. LMa"
+            style="position: relative; z-index: 2; border-radius: 2px"
+          />
+          <div class="hero-badge">
+            <span class="hero-badge-num">100+</span>
+            <span
+              class="hero-badge-label"
+              data-en="Happy Clients"
+              data-ar="عميلة سعيدة"
+              >Happy Clients</span
+            >
+          </div>
+          <div class="hero-logo-stamp"><span>LMa</span></div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span data-en="Scroll" data-ar="مرر">Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ══════════════ ABOUT ══════════════ -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-image-wrap reveal-left">
+          <div class="about-accent-box"></div>
+          <img
+            class="about-photo"
+            src="./images/about/3.png"
+            alt="Dr. LMa"
+            style="display: block; width: 100%; height: auto"
+          />
+          <div class="about-stat-box">
+            <span class="about-stat-num">2+</span>
+            <span
+              class="about-stat-label"
+              data-en="Years of Excellence"
+              data-ar="سنوات من التميز"
+              >Years of Excellence</span
+            >
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <p
+            class="section-eyebrow"
+            data-en="Meet the Specialist"
+            data-ar="تعرفي على الأخصائية"
+          >
+            Meet the Specialist
+          </p>
+          <p class="about-name" data-en="Dr. LMa" data-ar="د. لما">Dr. LMa</p>
+          <p
+            class="about-title-text"
+            data-en="Certified Aesthetic Physician · Non-Surgical Cosmetic Specialist"
+            data-ar="طبيبة تجميلية معتمدة · أخصائية تجميل غير جراحي"
+          >
+            Certified Aesthetic Physician · Non-Surgical Cosmetic Specialist
+          </p>
+          <div class="gold-line"></div>
+          <h2 class="section-title">
+            <span data-en="When " data-ar="حين ">When </span
+            ><em data-en="Dreams" data-ar="الحلم">Dreams</em
+            ><span data-en=" Become Reality" data-ar=" يصبح حقيقة">
+              Become Reality</span
+            >
+          </h2>
+          <p
+            class="section-desc"
+            style="margin-bottom: 24px"
+            data-en="With a deep passion for aesthetic medicine and an unwavering commitment to natural results, Dr. LMa brings a unique blend of medical expertise and artistic vision to every consultation."
+            data-ar="بشغف عميق لطب التجميل والتزام راسخ بالنتائج الطبيعية، تمزج د. لما بين خبرتها الطبية ورؤيتها الفنية في كل استشارة."
+          >
+            With a deep passion for aesthetic medicine and an unwavering
+            commitment to natural results, Dr. LMa brings a unique blend of
+            medical expertise and artistic vision to every consultation.
+          </p>
+          <p
+            class="section-desc"
+            style="margin-bottom: 0"
+            data-en="Trained in advanced non-surgical techniques across internationally recognized institutions, she approaches each patient as a unique canvas — enhancing features, restoring harmony, and rebuilding confidence through the most precise, gentle methods available."
+            data-ar="تدربت على أحدث التقنيات غير الجراحية في مؤسسات دولية معترف بها، وتتعامل مع كل عميلة باعتبارها لوحة فريدة — تُجلي ملامحها وتُعيد التوازن وتُعيد بناء الثقة بأدق الأساليب وأكثرها لطفاً."
+          >
+            Trained in advanced non-surgical techniques across internationally
+            recognized institutions, she approaches each patient as a unique
+            canvas — enhancing features, restoring harmony, and rebuilding
+            confidence through the most precise, gentle methods available.
+          </p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <p class="pillar-title" data-en="Precision" data-ar="الدقة">
+                Precision
+              </p>
+              <p
+                class="pillar-desc"
+                data-en="Meticulously calibrated treatments for natural, balanced results."
+                data-ar="علاجات مُعايَرة بعناية لنتائج طبيعية ومتوازنة."
+              >
+                Meticulously calibrated treatments for natural, balanced
+                results.
+              </p>
+            </div>
+            <div class="pillar">
+              <p class="pillar-title" data-en="Safety" data-ar="السلامة">
+                Safety
+              </p>
+              <p
+                class="pillar-desc"
+                data-en="Medical-grade protocols and premium certified products only."
+                data-ar="بروتوكولات طبية عالية المستوى ومنتجات معتمدة فقط."
+              >
+                Medical-grade protocols and premium certified products only.
+              </p>
+            </div>
+            <div class="pillar">
+              <p class="pillar-title" data-en="Artistry" data-ar="الفنية">
+                Artistry
+              </p>
+              <p
+                class="pillar-desc"
+                data-en="An aesthetic eye trained to see beauty in its most authentic form."
+                data-ar="عين فنية مدربة على رؤية الجمال في أصدق صوره."
+              >
+                An aesthetic eye trained to see beauty in its most authentic
+                form.
+              </p>
+            </div>
+            <div class="pillar">
+              <p class="pillar-title" data-en="Empathy" data-ar="التعاطف">
+                Empathy
+              </p>
+              <p
+                class="pillar-desc"
+                data-en="Every consultation begins with truly listening to you."
+                data-ar="كل استشارة تبدأ بالإنصات الحقيقي لكِ."
+              >
+                Every consultation begins with truly listening to you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ CERTIFICATIONS ══════════════ -->
+    <section id="certifications">
+      <div class="reveal">
+        <p
+          class="section-eyebrow"
+          data-en="Credentials & Training"
+          data-ar="المؤهلات والتدريب"
+        >
+          Credentials & Training
+        </p>
+        <h2 class="section-title">
+          <span data-en="Internationally " data-ar="معتمدة "
+            >Internationally </span
+          ><em data-en="Certified" data-ar="دولياً">Certified</em>
+        </h2>
+        <p
+          class="section-desc"
+          data-en="Advanced training from leading institutions in aesthetic medicine, ensuring the highest standards of safety, skill, and innovation."
+          data-ar="تدريب متقدم من مؤسسات رائدة في طب التجميل، يضمن أعلى معايير السلامة والمهارة والابتكار."
+        >
+          Advanced training from leading institutions in aesthetic medicine,
+          ensuring the highest standards of safety, skill, and innovation.
+        </p>
+      </div>
+      <div class="cert-grid reveal">
+        <div class="cert-card">
+          <div class="cert-icon">◈</div>
+          <h3
+            class="cert-name"
+            data-en="Aesthetic Medicine"
+            data-ar="طب التجميل"
+          >
+            Aesthetic Medicine
+          </h3>
+          <p
+            class="cert-body"
+            data-en="International Certification in Non-Surgical Aesthetic Interventions"
+            data-ar="شهادة معتمدة دوليا في التدخلات التجميلية غير الجراحية"
+          >
+            International Certification in Non-Surgical Aesthetic Interventions
+          </p>
+          <p
+            class="cert-desc"
+            data-en="Specialized training in non-surgical cosmetic interventions, facial anatomy, and injection techniques."
+            data-ar="تدريب متخصص في التدخلات التجميلية غير الجراحية وتشريح الوجه وتقنيات الحقن."
+          >
+            Specialized training in non-surgical cosmetic interventions, facial
+            anatomy, and injection techniques.
+          </p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">❖</div>
+          <h3
+            class="cert-name"
+            data-en="Lip & Filler Mastery"
+            data-ar="إتقان الشفاه والفيلر"
+          >
+            Lip & Filler Mastery
+          </h3>
+          <p
+            class="cert-body"
+            data-en="International Certification"
+            data-ar="شهادة دولية"
+          >
+            International Certification
+          </p>
+          <p
+            class="cert-desc"
+            data-en="Mastery-level training in dermal fillers, lip augmentation, and volumization from international masters."
+            data-ar="تدريب على مستوى الإتقان في حشوات الأدمة وتحسين الشفاه والتحجيم من خبراء دوليين."
+          >
+            Mastery-level training in dermal fillers, lip augmentation, and
+            volumization from international masters.
+          </p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">◆</div>
+          <h3
+            class="cert-name"
+            data-en="Botulinum Toxin"
+            data-ar="سم البوتولينوم"
+          >
+            Botulinum Toxin
+          </h3>
+          <p
+            class="cert-body"
+            data-en="Certified Injector"
+            data-ar="حاقنة معتمدة"
+          >
+            Certified Injector
+          </p>
+          <p
+            class="cert-desc"
+            data-en="Advanced certification in Botox, Dysport, and related neurotoxin therapies for facial rejuvenation."
+            data-ar="شهادة متقدمة في البوتوكس والديسبورت والعلاجات العصبية المرتبطة لتجديد شباب الوجه."
+          >
+            Advanced certification in Botox, Dysport, and related neurotoxin
+            therapies for facial rejuvenation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ SERVICES ══════════════ -->
+    <section id="services">
+      <div class="services-intro">
+        <div class="reveal-left">
+          <p
+            class="section-eyebrow"
+            data-en="Our Treatments"
+            data-ar="علاجاتنا"
+          >
+            Our Treatments
+          </p>
+          <h2 class="section-title">
+            <span data-en="Curated " data-ar="تجارب تجميلية ">Curated </span
+            ><em data-en="Aesthetic" data-ar="مُختارة">Aesthetic</em
+            ><span data-en=" Experiences" data-ar=" بعناية"> Experiences</span>
+          </h2>
+        </div>
+        <div class="reveal-right">
+          <p
+            class="section-desc"
+            data-en="Each treatment is selected for its safety profile, longevity, and ability to deliver genuinely transformative yet entirely natural-looking results."
+            data-ar="كل علاج مُختار بعناية لخصائص سلامته وديمومته وقدرته على تحقيق نتائج تحويلية حقيقية تبدو طبيعية تماماً."
+          >
+            Each treatment is selected for its safety profile, longevity, and
+            ability to deliver genuinely transformative yet entirely
+            natural-looking results.
+          </p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <span class="service-num">01</span>
+          <h3
+            class="service-name"
+            data-en="Lip Enhancement"
+            data-ar="تحسين الشفاه"
+          >
+            Lip Enhancement
+          </h3>
+          <p
+            class="service-desc"
+            data-en="Artful augmentation and reshaping of the lips using premium hyaluronic acid fillers. From subtle definition to fuller volume — always balanced and beautiful."
+            data-ar="تحسين وإعادة تشكيل الشفاه بفن باستخدام حشوات حمض الهيالورونيك الفاخرة. من التحديد الخفي إلى الحجم الأكثر امتلاءً — دائماً متوازنة وجميلة."
+          >
+            Artful augmentation and reshaping of the lips using premium
+            hyaluronic acid fillers. From subtle definition to fuller volume —
+            always balanced and beautiful.
+          </p>
+          <a
+            href="#contact"
+            class="service-link"
+            data-en="Enquire →"
+            data-ar="← استفسري"
+            >Enquire →</a
+          >
+        </div>
+        <div class="service-card reveal">
+          <span class="service-num">02</span>
+          <h3
+            class="service-name"
+            data-en="Botox & Dysport"
+            data-ar="البوتوكس والديسبورت"
+          >
+            Botox & Dysport
+          </h3>
+          <p
+            class="service-desc"
+            data-en="Precision neurotoxin treatments to smooth dynamic lines, lift the brow, and achieve effortless facial harmony — with results that move naturally with you."
+            data-ar="علاجات السموم العصبية الدقيقة لتنعيم الخطوط الحركية ورفع الحاجبين وتحقيق انسجام الوجه — بنتائج تتحرك معكِ بشكل طبيعي."
+          >
+            Precision neurotoxin treatments to smooth dynamic lines, lift the
+            brow, and achieve effortless facial harmony — with results that move
+            naturally with you.
+          </p>
+          <a
+            href="#contact"
+            class="service-link"
+            data-en="Enquire →"
+            data-ar="← استفسري"
+            >Enquire →</a
+          >
+        </div>
+        <div class="service-card reveal">
+          <span class="service-num">03</span>
+          <h3
+            class="service-name"
+            data-en="Cheek & Jawline"
+            data-ar="الخدود وخط الفك"
+          >
+            Cheek & Jawline
+          </h3>
+          <p
+            class="service-desc"
+            data-en="Strategic volumization and contouring of the cheeks and jawline to restore youthful structure and create elegant facial definition."
+            data-ar="تحجيم وتحديد استراتيجي للخدود وخط الفك لاستعادة البنية الشبابية وخلق تحديد أنيق للوجه."
+          >
+            Strategic volumization and contouring of the cheeks and jawline to
+            restore youthful structure and create elegant facial definition.
+          </p>
+          <a
+            href="#contact"
+            class="service-link"
+            data-en="Enquire →"
+            data-ar="← استفسري"
+            >Enquire →</a
+          >
+        </div>
+        <div class="service-card reveal">
+          <span class="service-num">04</span>
+          <h3
+            class="service-name"
+            data-en="Skin Boosters"
+            data-ar="محفزات البشرة"
+          >
+            Skin Boosters
+          </h3>
+          <p
+            class="service-desc"
+            data-en="Intensely hydrating micro-injections that restore skin luminosity, elasticity, and glow from within — the ultimate radiance treatment."
+            data-ar="حقن دقيقة مرطبة بشدة تُعيد إشراق البشرة ومرونتها وتألقها من الداخل — علاج الإشراق الأمثل."
+          >
+            Intensely hydrating micro-injections that restore skin luminosity,
+            elasticity, and glow from within — the ultimate radiance treatment.
+          </p>
+          <a
+            href="#contact"
+            class="service-link"
+            data-en="Enquire →"
+            data-ar="← استفسري"
+            >Enquire →</a
+          >
+        </div>
+        <div class="service-card reveal">
+          <span class="service-num">05</span>
+          <h3
+            class="service-name"
+            data-en="Under-Eye Rejuvenation"
+            data-ar="تجديد منطقة العين"
+          >
+            Under-Eye Rejuvenation
+          </h3>
+          <p
+            class="service-desc"
+            data-en="Delicate tear trough treatments to soften hollows, reduce dark shadows, and refresh tired eyes with exceptional precision."
+            data-ar="علاجات لطيفة لمنطقة تحت العين لتلطيف التجاويف وتقليل الظلال الداكنة وتجديد العيون المتعبة بدقة استثنائية."
+          >
+            Delicate tear trough treatments to soften hollows, reduce dark
+            shadows, and refresh tired eyes with exceptional precision.
+          </p>
+          <a
+            href="#contact"
+            class="service-link"
+            data-en="Enquire →"
+            data-ar="← استفسري"
+            >Enquire →</a
+          >
+        </div>
+        <div class="service-card reveal">
+          <span class="service-num">06</span>
+          <h3 class="service-name" data-en="Thread Lift" data-ar="رفع الخيوط">
+            Thread Lift
+          </h3>
+          <p
+            class="service-desc"
+            data-en="Non-surgical lifting using dissolvable PDO threads to redefine facial contours, stimulate collagen, and restore youthful architecture."
+            data-ar="رفع غير جراحي باستخدام خيوط PDO قابلة للذوبان لإعادة تعريف ملامح الوجه وتحفيز الكولاجين واستعادة البنية الشبابية."
+          >
+            Non-surgical lifting using dissolvable PDO threads to redefine
+            facial contours, stimulate collagen, and restore youthful
+            architecture.
+          </p>
+          <a
+            href="#contact"
+            class="service-link"
+            data-en="Enquire →"
+            data-ar="← استفسري"
+            >Enquire →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ BEFORE & AFTER ══════════════ -->
+    <section id="gallery">
+      <div class="gallery-header">
+        <div class="reveal-left">
+          <p
+            class="section-eyebrow"
+            data-en="Transformations"
+            data-ar="قصص التحول"
+          >
+            Transformations
+          </p>
+          <h2 class="section-title">
+            <span data-en="Real Results, " data-ar="نتائج حقيقية، "
+              >Real Results, </span
+            ><em data-en="Natural Beauty" data-ar="جمال طبيعي"
+              >Natural Beauty</em
+            >
+          </h2>
+        </div>
+        <a href="#contact" class="btn-ghost reveal-right">
+          <span class="arrow">→</span>
+          <span data-en="See Full Gallery" data-ar="عرض المعرض"
+            >See Full Gallery</span
+          >
+        </a>
+      </div>
+      <div class="ba-grid">
+        <div class="ba-card reveal">
+          <div class="ba-card-inner">
+            <img
+              src="./images/filer/photo_2026-06-12_18-04-07.jpg"
+              alt="Lip Enhancement Before After"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+              "
+            />
+            <span class="ba-label" data-en="Before · After" data-ar="قبل · بعد"
+              >Before · After</span
+            >
+            <div class="ba-procedure">
+              <p
+                class="ba-proc-name"
+                data-en="Lip Augmentation"
+                data-ar="تكبير الشفاه"
+              >
+                Lip Augmentation
+              </p>
+              <span
+                class="ba-proc-sub"
+                data-en="Hyaluronic Acid · 1ml"
+                data-ar="حمض الهيالورونيك · 1 مل"
+                >Hyaluronic Acid · 1ml</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="ba-card reveal">
+          <div class="ba-card-inner">
+            <img
+              src="./images/botox/photo_2026-06-12_18-06-18.jpg"
+              alt="Botox & Skin Tightening Before After"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+              "
+            />
+            <span class="ba-label" data-en="Before · After" data-ar="قبل · بعد"
+              >Before · After</span
+            >
+            <div class="ba-procedure">
+              <p
+                class="ba-proc-name"
+                data-en="Botox & Skin Tightening"
+                data-ar="البوتوكس وشد البشرة"
+              >
+                Botox & Skin Tightening
+              </p>
+              <span
+                class="ba-proc-sub"
+                data-en="Botox · Skin Tightening"
+                data-ar="بوتوكس · شد البشرة"
+                >Botox · Skin Tightening</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="ba-card reveal">
+          <div class="ba-card-inner">
+            <img
+              src="./images/Jawline/4.jpg"
+              alt="Jawline Definition Before After"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+              "
+            />
+            <span class="ba-label" data-en="Before · After" data-ar="قبل · بعد"
+              >Before · After</span
+            >
+            <div class="ba-procedure">
+              <p
+                class="ba-proc-name"
+                data-en="Jawline Contouring"
+                data-ar="نحت الفك"
+              >
+                Jawline Contouring
+              </p>
+              <span
+                class="ba-proc-sub"
+                data-en="Dermal Filler · Sculpting"
+                data-ar="فيلر جلدي · نحت"
+                >Dermal Filler · Sculpting</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ TESTIMONIALS ══════════════ -->
+    <section id="testimonials">
+      <div class="testimonials-wrap">
+        <div class="reveal-left">
+          <p
+            class="section-eyebrow"
+            data-en="Client Stories"
+            data-ar="قصص العملاء"
+          >
+            Client Stories
+          </p>
+          <h2 class="section-title">
+            <span data-en="Words That " data-ar="كلمات ">Words That </span
+            ><em data-en="Inspire" data-ar="تُلهمنا">Inspire</em
+            ><span data-en=" Us" data-ar=""> Us</span>
+          </h2>
+          <div class="gold-line"></div>
+          <div class="rating-summary">
+            <span class="rating-big">4.<em>9</em></span>
+            <span class="rating-stars-big">★★★★★</span>
+            <p
+              class="rating-count"
+              data-en="Based on 200+ verified reviews"
+              data-ar="بناءً على أكثر من 200 تقييم موثق"
+            >
+              Based on 200+ verified reviews
+            </p>
+          </div>
+          <p
+            class="section-desc"
+            data-en="Every consultation. Every treatment. Every result. Our clients' confidence is our greatest achievement."
+            data-ar="كل استشارة. كل علاج. كل نتيجة. ثقة عميلاتنا هي أعظم إنجازاتنا."
+          >
+            Every consultation. Every treatment. Every result. Our clients'
+            confidence is our greatest achievement.
+          </p>
+        </div>
+        <div class="testimonials-list reveal-right">
+          <div class="testimonial-card">
+            <span class="testimonial-quote">"</span>
+            <span class="testimonial-stars">★★★★★</span>
+            <p
+              class="testimonial-text"
+              data-en="I was incredibly nervous about getting lip filler for the first time, but Dr. LMa made me feel completely at ease. The result was so natural — everyone notices I look refreshed but no one can tell why. Absolute perfection."
+              data-ar="كنت خائفة جداً من حقن الشفاه لأول مرة، لكن د. لما جعلتني أشعر بالراحة التامة. النتيجة طبيعية جداً — كل من يراني يلاحظ أنني أبدو منتعشة لكن لا أحد يعرف السبب. كمال تام."
+            >
+              I was incredibly nervous about getting lip filler for the first
+              time, but Dr. LMa made me feel completely at ease. The result was
+              so natural — everyone notices I look refreshed but no one can tell
+              why. Absolute perfection.
+            </p>
+            <span
+              class="testimonial-author"
+              data-en="LIMAR N."
+              data-ar="ليمار ن."
+              >LIMAR N.</span
+            >
+            <span
+              class="testimonial-procedure"
+              data-en="Lip Enhancement · Dubai"
+              data-ar="تحسين الشفاه · دبي"
+              >Lip Enhancement · Jableh</span
+            >
+          </div>
+          <div class="testimonial-card">
+            <span class="testimonial-quote">"</span>
+            <span class="testimonial-stars">★★★★★</span>
+            <p
+              class="testimonial-text"
+              data-en="The under-eye treatment completely transformed how I look — I no longer look tired or drawn. The precision and care during the procedure was exceptional. I've already recommended LMa to all my friends."
+              data-ar="علاج منطقة تحت العين غيّر مظهري تماماً — لم أعد أبدو متعبة أو مرهقة. الدقة والعناية خلال الإجراء كانت استثنائية. أوصيت بـ LMa لجميع صديقاتي."
+            >
+              The under-eye treatment completely transformed how I look — I no
+              longer look tired or drawn. The precision and care during the
+              procedure was exceptional. I've already recommended LMa to all my
+              friends.
+            </p>
+            <span class="testimonial-author" data-en="Noor A." data-ar="نور أ."
+              >Noor A.</span
+            >
+            <span
+              class="testimonial-procedure"
+              data-en="Tear Trough Filler · Istanbul"
+              data-ar="فيلر الهالات · إسطنبول"
+              >Tear Trough Filler · Jableh
+            </span>
+          </div>
+          <div class="testimonial-card">
+            <span class="testimonial-quote">"</span>
+            <span class="testimonial-stars">★★★★★</span>
+            <p
+              class="testimonial-text"
+              data-en="My cheeks look lifted, my jawline is sharper, and my skin is glowing. The whole experience felt like a luxury spa combined with a medical clinic. Dr. LMa is truly an artist. I won't go anywhere else."
+              data-ar="خدودي تبدو مرفوعة، خط فكي أكثر حدة، وبشرتي متألقة. كانت التجربة كلها كمنتجع صحي فاخر مع عيادة طبية. د. لما فنانة حقيقية. لن أذهب لأي مكان آخر."
+            >
+              My cheeks look lifted, my jawline is sharper, and my skin is
+              glowing. The whole experience felt like a luxury spa combined with
+              a medical clinic. Dr. LMa is truly an artist. I won't go anywhere
+              else.
+            </p>
+            <span class="testimonial-author" data-en="Lara K." data-ar="لارا ك."
+              >Lara K.</span
+            >
+            <span
+              class="testimonial-procedure"
+              data-en="Cheek Filler & Skin Booster · Beirut"
+              data-ar="فيلر الخدود ومحفز البشرة · بيروت"
+              >Cheek Filler & Skin Booster · Latakia</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ CONTACT ══════════════ -->
+    <section id="contact">
+      <div class="contact-grid">
+        <div class="reveal-left">
+          <p
+            class="section-eyebrow"
+            data-en="Get in Touch"
+            data-ar="تواصلي معنا"
+          >
+            Get in Touch
+          </p>
+          <h2 class="section-title">
+            <span data-en="Begin Your " data-ar="ابدئي ">Begin Your </span
+            ><em data-en="Journey" data-ar="رحلتكِ">Journey</em>
+          </h2>
+          <div class="gold-line"></div>
+          <p
+            class="section-desc"
+            style="margin-bottom: 50px"
+            data-en="Every transformation starts with a conversation. Book your private consultation and discover what's possible."
+            data-ar="كل تحول يبدأ بمحادثة. احجزي استشارتك الخاصة واكتشفي ما هو ممكن."
+          >
+            Every transformation starts with a conversation. Book your private
+            consultation and discover what's possible.
+          </p>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✆</div>
+            <div>
+              <span
+                class="contact-detail-label"
+                data-en="Phone & WhatsApp"
+                data-ar="الهاتف وواتساب"
+                >Phone & WhatsApp</span
+              >
+              <span
+                class="contact-detail-value number-ltr"
+                data-ar="+963 939 009 885"
+                >+963 939 009 885</span
+              >
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">@</div>
+            <div>
+              <a
+                href="https://www.instagram.com/lma_hmoud?igsh=MTB0OHhrYmZ5djh4YQ=="
+                target="_blank"
+                rel="noopener"
+                style="text-decoration: none; color: inherit"
+              >
+                <span
+                  class="contact-detail-label"
+                  data-en="Instagram"
+                  data-ar="انستغرام"
+                  >Instagram</span
+                >
+                <span class="contact-detail-value">@lma_hmoud</span>
+              </a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">f</div>
+            <div>
+              <a
+                href="https://www.facebook.com/share/1DvEQXD1bC/"
+                target="_blank"
+                rel="noopener"
+                style="text-decoration: none; color: inherit"
+              >
+                <span
+                  class="contact-detail-label"
+                  data-en="Facebook"
+                  data-ar="فيسبوك"
+                  >Facebook</span
+                >
+                <span class="contact-detail-value">Lma Hmoud</span>
+              </a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">◎</div>
+            <div>
+              <span
+                class="contact-detail-label"
+                data-en="Location"
+                data-ar="الموقع"
+                >Location</span
+              >
+              <span
+                class="contact-detail-value"
+                data-en="Syria, Latakia"
+                data-ar="سوريا، اللاذقية"
+                >Syria, Latakia</span
+              >
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">◷</div>
+            <div>
+              <span
+                class="contact-detail-label"
+                data-en="Clinic Hours"
+                data-ar="ساعات العيادة"
+                >Clinic Hours</span
+              >
+              <span
+                class="contact-detail-value number-ltr"
+                data-en="Sun – Sat: 10:00 – 19:00"
+                data-ar="الأحد – السبت: 10:00 – 19:00"
+                >Sun – Sat: 10:00 – 19:00</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- empty right col placeholder - matches original structure -->
+        <div
+          class="reveal-right"
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <div
+            style="
+              text-align: center;
+              padding: 60px 40px;
+              border: 1px solid rgba(201, 169, 110, 0.2);
+              width: 100%;
+            "
+          >
+            <div
+              style="
+                font-family: 'Cormorant Garamond', serif;
+                font-style: italic;
+                font-size: 3rem;
+                color: var(--gold);
+                margin-bottom: 16px;
+              "
+            >
+              LMa
+            </div>
+            <p
+              style="
+                font-family: var(--font-body);
+                font-weight: 300;
+                font-size: 0.82rem;
+                color: var(--warm-gray);
+                line-height: 1.8;
+              "
+              data-en="We look forward to welcoming you. Reach out via any of the channels listed, and our team will respond within 24 hours."
+              data-ar="يسعدنا الترحيب بكِ. تواصلي معنا عبر أي من القنوات المذكورة وسيردّ فريقنا خلال 24 ساعة."
+            >
+              We look forward to welcoming you. Reach out via any of the
+              channels listed, and our team will respond within 24 hours.
+            </p>
+            <a
+              href="https://wa.me/963939009885"
+              target="_blank"
+              rel="noopener"
+              class="btn-primary"
+              style="margin-top: 32px; display: inline-block"
+              data-en="Chat on WhatsApp"
+              data-ar="تواصل عبر واتساب"
+              >Chat on WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">LMa</span>
+          <p
+            class="footer-tagline"
+            data-en="Non-Surgical Cosmetic Procedures"
+            data-ar="إجراءات تجميلية غير جراحية"
+          >
+            Non-Surgical Cosmetic Procedures
+          </p>
+          <p
+            class="footer-bio"
+            data-en="Elevating natural beauty through precision, artistry, and the most advanced non-surgical techniques. Based in Latakia, Syria."
+            data-ar="نرتقي بالجمال الطبيعي من خلال الدقة والفنية وأحدث التقنيات غير الجراحية. مقرها اللاذقية، سوريا."
+          >
+            Elevating natural beauty through precision, artistry, and the most
+            advanced non-surgical techniques. Based in Latakia, Syria.
+          </p>
+        </div>
+        <div>
+          <p class="footer-col-title" data-en="Treatments" data-ar="العلاجات">
+            Treatments
+          </p>
+          <ul class="footer-links">
+            <li>
+              <a
+                href="#services"
+                data-en="Lip Enhancement"
+                data-ar="تحسين الشفاه"
+                >Lip Enhancement</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                data-en="Botox & Dysport"
+                data-ar="البوتوكس والديسبورت"
+                >Botox & Dysport</a
+              >
+            </li>
+            <li>
+              <a href="#services" data-en="Cheek Filler" data-ar="فيلر الخدود"
+                >Cheek Filler</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                data-en="Skin Boosters"
+                data-ar="محفزات البشرة"
+                >Skin Boosters</a
+              >
+            </li>
+            <li>
+              <a href="#services" data-en="Thread Lift" data-ar="رفع الخيوط"
+                >Thread Lift</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                data-en="Under-Eye Filler"
+                data-ar="فيلر تحت العين"
+                >Under-Eye Filler</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title" data-en="Clinic" data-ar="العيادة">
+            Clinic
+          </p>
+          <ul class="footer-links">
+            <li>
+              <a href="#about" data-en="About Dr. LMa" data-ar="عن د. لما"
+                >About Dr. LMa</a
+              >
+            </li>
+            <li>
+              <a href="#certifications" data-en="Credentials" data-ar="المؤهلات"
+                >Credentials</a
+              >
+            </li>
+            <li>
+              <a href="#gallery" data-en="Before & After" data-ar="قبل وبعد"
+                >Before & After</a
+              >
+            </li>
+            <li>
+              <a href="#testimonials" data-en="Reviews" data-ar="التقييمات"
+                >Reviews</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title" data-en="Connect" data-ar="تواصل">
+            Connect
+          </p>
+          <ul class="footer-links">
+            <li>
+              <a
+                href="https://wa.me/963939009885"
+                target="_blank"
+                rel="noopener"
+                data-en="WhatsApp"
+                data-ar="واتساب"
+                >WhatsApp</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/lma_hmoud?igsh=MTB0OHhrYmZ5djh4YQ=="
+                target="_blank"
+                rel="noopener"
+                data-en="Instagram"
+                data-ar="انستغرام"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/share/1DvEQXD1bC/"
+                target="_blank"
+                rel="noopener"
+                data-en="Facebook"
+                data-ar="فيسبوك"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#contact" data-en="Location" data-ar="الموقع"
+                >Location</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p
+          class="footer-copy"
+          data-en="© 2026 LMa Aesthetic Clinic. All rights reserved."
+          data-ar="© 2026 عيادة LMa التجميلية. جميع الحقوق محفوظة."
+        >
+          © 2026 LMa Aesthetic Clinic. All rights reserved.
+        </p>
+        <div class="footer-socials">
+          <a
+            href="https://www.instagram.com/lma_hmoud?igsh=MTB0OHhrYmZ5djh4YQ=="
+            target="_blank"
+            rel="noopener"
+            class="footer-social"
+            aria-label="Instagram"
+            >✦</a
+          >
+          <a
+            href="https://www.facebook.com/share/1DvEQXD1bC/"
+            target="_blank"
+            rel="noopener"
+            class="footer-social"
+            aria-label="Facebook"
+            >◈</a
+          >
+          <a
+            href="https://wa.me/963939009885"
+            target="_blank"
+            rel="noopener"
+            class="footer-social"
+            aria-label="WhatsApp"
+            >❖</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a
+      href="https://wa.me/963939009885"
+      class="float-wa"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        />
+      </svg>
+    </a>
+
+    <script>
+      // ══════════════════════════════════════════
+      //  CURSOR
+      // ══════════════════════════════════════════
+      const dot = document.getElementById('dot')
+      const ring = document.getElementById('ring')
+      document.addEventListener('mousemove', (e) => {
+        dot.style.left = e.clientX + 'px'
+        dot.style.top = e.clientY + 'px'
+        ring.style.left = e.clientX + 'px'
+        ring.style.top = e.clientY + 'px'
+      })
+      document
+        .querySelectorAll('a, button, .service-card, .ba-card, .cert-card')
+        .forEach((el) => {
+          el.addEventListener('mouseenter', () => {
+            ring.style.width = '60px'
+            ring.style.height = '60px'
+            ring.style.opacity = '1'
+          })
+          el.addEventListener('mouseleave', () => {
+            ring.style.width = '36px'
+            ring.style.height = '36px'
+            ring.style.opacity = '0.6'
+          })
+        })
+
+      // ══════════════════════════════════════════
+      //  LANGUAGE SYSTEM
+      // ══════════════════════════════════════════
+      let currentLang = 'en'
+
+      function setLang(lang) {
+        if (lang === currentLang) return
+        const overlay = document.getElementById('langOverlay')
+
+        // fade in
+        overlay.classList.add('active')
+
+        setTimeout(() => {
+          currentLang = lang
+          const html = document.documentElement
+
+          if (lang === 'ar') {
+            html.setAttribute('lang', 'ar')
+            html.setAttribute('dir', 'rtl')
+            document.getElementById('btnAr').classList.add('active')
+            document.getElementById('btnEn').classList.remove('active')
+          } else {
+            html.setAttribute('lang', 'en')
+            html.setAttribute('dir', 'ltr')
+            document.getElementById('btnEn').classList.add('active')
+            document.getElementById('btnAr').classList.remove('active')
+          }
+
+          // translate every element that has data-en / data-ar
+          document.querySelectorAll('[data-' + lang + ']').forEach((el) => {
+            const val = el.getAttribute('data-' + lang)
+            if (val !== null) {
+              // only replace textContent if the element has no child elements
+              // (to avoid clobbering nested spans like .arrow inside .btn-ghost)
+              if (el.children.length === 0) {
+                el.textContent = val
+              }
+            }
+          })
+
+          // update page title & meta description
+          document.title =
+            lang === 'ar'
+              ? 'LMa | عيادة تجميل فاخرة'
+              : 'LMa | Luxury Aesthetic Clinic'
+
+          // fade out
+          setTimeout(() => overlay.classList.remove('active'), 60)
+        }, 220)
+      }
+
+      // ══════════════════════════════════════════
+      //  NAV SCROLL
+      // ══════════════════════════════════════════
+      const navbar = document.getElementById('navbar')
+      window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 60)
+      })
+
+      // ══════════════════════════════════════════
+      //  HAMBURGER
+      // ══════════════════════════════════════════
+      const hamburger = document.getElementById('hamburger')
+      const mobileMenu = document.getElementById('mobileMenu')
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open')
+        mobileMenu.classList.toggle('open')
+      })
+      function closeMobile() {
+        hamburger.classList.remove('open')
+        mobileMenu.classList.remove('open')
+      }
+
+      // ══════════════════════════════════════════
+      //  SCROLL REVEAL
+      // ══════════════════════════════════════════
+      const reveals = document.querySelectorAll(
+        '.reveal, .reveal-left, .reveal-right',
+      )
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => entry.target.classList.add('visible'), 80)
+              revealObserver.unobserve(entry.target)
+            }
+          })
+        },
+        { threshold: 0.12 },
+      )
+      reveals.forEach((el) => revealObserver.observe(el))
+
+      // stagger children
+      document
+        .querySelectorAll(
+          '.services-grid, .cert-grid, .ba-grid, .testimonials-list',
+        )
+        .forEach((grid) => {
+          ;[...grid.children].forEach((child, i) => {
+            child.style.transitionDelay = i * 0.1 + 's'
+          })
+        })
+    </script>
+  </body>
+</html>
